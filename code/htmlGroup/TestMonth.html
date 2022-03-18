@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <p id="pTestMonth" style="color:yellowgreen ;">题目月份：</p>
+
+    <button type="button" onclick="onRandomTopic()">抽取题目</button>
+
+    <br>
+    <br>
+
+    <textarea id="textAreaUserAnswer" 
+            placeholder="请输入与对应的英文月份" 
+            maxlength="10"
+            rows="1"
+            onkeydown="return handleEnterKeyEvent(event.keyCode)"></textarea>
+
+    <br>
+
+    <em id="emHintEnterSubmit" style="font-size: 10px; color:peru;">*直接按下回车键也可提交</em>
+
+    <br><br>
+
+    <button type="button" onclick="onSubmitAnswer()">提交答案</button>
+    
+
+    <p id="pResult"></p> 
+
+    <em id="emHintAutoChange" style="font-size: 10px; color:peru;">*如果回答正确，系统将会在一秒后自动切换下一题</em>
+
+    <script src="../scriptGroup/TestMonthHelper.js"></script>
+    
+</body>
+</html>
